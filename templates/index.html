@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Ads Linkvertise -->
+  <script src="https://publisher.linkvertise.com/cdn/linkvertise.js"></script><script>linkvertise(363346, {whitelist: ["https://apkadmin.com","https://mega.nz/","https://www.mediafire.com/","https://drive.google.com/"], blacklist: []});</script>
+  <!-- Adsterra -->
+  <script type='text/javascript' src='//respectfulpleaabsolve.com/80/f9/14/80f914772f859e4de3ff9ec2c823e381.js'></script>
+  <!--Metadatos = codificacion-->
+  <meta charset="UTF-8">
+  <!--Metadato del autor !important-->
+  <meta name="author" content="Aedla">
+  <!--Metadatos SEO-->
+  <meta name="keywords" content="anime, anime world, top anime 2023">
+  <!--Metadato descriptivo de la pagina-->
+  <meta name="description" content="Pagina web de anime desarrollada por estudiante">
+  <!--Metadato responsive-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Boostrap style-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!--Boostrap icon-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <!--Style css-->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <!--Favicon icon and title-->
+  <link rel="shortcut icon" href="{{ url_for('static', filename='img/aedla-items/Favi_con.png') }}" type="image/x-icon">
+  <title>Aedla - Disfruta de las mejores películas de anime</title>
+  <!-- Scrip para boton arriba -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="./assets/js/arriba.js"></script>
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- button top -->
+  <span><i class="ir-arriba bi bi-arrow-up-circle-fill"></i></span>
+  <header>
+    <nav class="navega navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="{{ url_for('static', filename='img/aedla-items/nav_logo.png') }}" height="30rem" alt="logo de pagina web">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <ul class="navbar-nav me-auto">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#popular"><span class="aedla">POPULAR ツ</span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#explorar">Explorar</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#nuevo">Nuevo</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#otra">Otra vez</a>
+            </li>
+
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="">Otra vez</a>
+            </li> -->
+
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li> -->
+
+          </ul>
+          <form class="login-1 d-flex" role="search">
+            <button type="button" class="btn btn-dark d-flex">
+              <i class="bi bi-eye-fill me-1"></i> 
+              <p class="m-0 p-0">visitas:</p>
+              <div id="count" class="ms-1">0</div>
+            </button>
+            <a href="https://www.youtube.com/@a.e.d.l.a/featured">
+              <button type="button" class="btn btn-danger ms-2"><i class="bi bi-youtube"></i> YouTube</button>
+            </a>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Background Fanpage -->
+  <div class="bg-hime">
+    <div class="container text-center pb-2 pt-5">
+      <div id="carouselExampleSlidesOnly" class="carousel slide mt-3" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+
+            <a class="Destok" href="series/Seishun_Buta_Yaro_wa_Yumemiru_Shoujo_no_Yume_wo_Minai/">
+              <img src="{{ url_for('static', filename='img/Carrusel/seishun-carrusel.png') }}" alt="...">
+            </a>
+
+            <a class="Movil" href="">
+              <img src="{{ url_for('static', filename='img/M_Carrusel/p-c-3.png') }}" alt="">
+            </a>            
+          </div>
+          <div class="carousel-item">
+            <a class="Destok" href="series/K-On/">
+              <img src="{{ url_for('static', filename='img/Carrusel/K-ON.png') }}" alt="...">
+            </a>
+
+            <a class="Movil" href="">
+              <img src="{{ url_for('static', filename='img/M_Carrusel/p-c-4.png') }}" alt="">
+            </a>            
+          </div>
+          <div class="carousel-item">
+            <a class="Destok" href="series/SaekanoTheMovie/">
+              <img src="{{ url_for('static', filename='img/Carrusel/Saekano-carrusel.png') }}" alt="...">
+            </a>
+
+            <a class="Movil" href="">
+              <img src="{{ url_for('static', filename='img/M_Carrusel/p-c-5.png') }}" alt="">
+            </a>              
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Lo mas popular-->
+  <section id="popular" class="visto seccion-oscura">
+    <div class="container text-center mt-md-5">
+      <h2 class="popular">LO MÁS <span class="active">POPULAR</span></h2>
+      <div class="row">
+
+        <!-- Your name -->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-film"></i>
+          <p class="visto-titulo">Your Name</p>
+          <a href="/your_name">
+            <img loading="lazy" src="{{ url_for('static', filename='img/popular/your-name-png.png') }}" class="card-img-top" alt="...">
+          </a>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-warning">Drama</span>
+            <span class="badge text-bg-warning">Romance</span>
+            <span class="badge text-bg-warning">Sobrenatural</span>
+          </div>
+        </div>
+
+        <!-- Seishun Buta Yarou Movie -->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-film"></i>
+          <p class="visto-titulo">Seishun Buta Yarou Movie</p>
+          <a href="series/Seishun_Buta_Yaro_wa_Yumemiru_Shoujo_no_Yume_wo_Minai/">
+            <img loading="lazy" src="{{ url_for('static', filename='img/popular/Seishun Buta Yarou wa....webp') }}" class="card-img-top" alt="...">
+          </a>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-warning">Romance</span>
+            <span class="badge text-bg-warning">Sobrenatural</span>
+            <span class="badge text-bg-warning">Drama</span>
+          </div>
+        </div>
+
+        <!-- Saekano The Movie -->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-film"></i>
+          <p class="visto-titulo">Saekano The Movie</p>
+          <a href="series/SaekanoTheMovie/">
+            <img loading="lazy" src="{{ url_for('static', filename='img/popular/Saekano-popular.png') }}" class="card-img-top" alt="...">
+          </a>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-warning">ECCHI</span>
+            <span class="badge text-bg-warning">ESCOLARES</span>
+            <span class="badge text-bg-warning">COMEDIA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--explorar-->
+  <section id="explorar" class="p-md-4">
+    <div class="contiene mt-md-5" >
+
+      <!-- Primera fila -->
+      <div class="container">
+        <h2 class="explore text-center">EXPLORAR</h2>
+        <div class="hijo row row-cols-1 row-cols-md-3 g-4">
+
+          <div class="padre-c col-md-3 col-12">
+            <div class="card-color card h-100">
+              <a href="series/FireWorks/">
+                <img loading="lazy" src="{{ url_for('static', filename='img/seguir-viendo/Fireworks.jpeg') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a class="text-warning" href="https://mega.nz/folder/pFlSmA6a#6QzUVtTL-uxpDNNE6ADmxg/file/sE9gCATY"><small class="text-muted">Descargar</small></a>
+                  <h5 class="card-title">Fireworks</h5>
+                  <small class="text-muted">Subtitulado</small>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-md-3 col-12">
+            <div class="card-color card h-100">
+              <a href="series/KimiSui/">
+                <img loading="lazy" src="{{ url_for('static', filename='img/seguir-viendo/Quiero_comerme_tus_pancreas.webp') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a class="text-warning" href="https://mega.nz/file/WAtkAITB#73YdvmY_5kX_hwHbNy2FNTJIxILvhH-kmNyz5GK_OQ0"><small class="text-muted">Descargar</small></a>
+                  <h5 class="card-title">I Want to Eat Your Pancreas</h5>
+                  <small class="text-muted">Subtitulado</small>
+                </div>
+              </a>
+            </div> 
+          </div>
+        
+          <div class="col-md-3 col-12">
+            <div class="card-color card h-100">
+              <a href="series/KoeNoKatachi/">
+                <img loading="lazy" src="{{ url_for('static', filename='img/seguir-viendo/koe_no_katachi.png') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a class="text-warning" href="https://www.mediafire.com/file/ar2umnk126hui5m/180KO3N0K474H12016001.rar/file"><small class="text-muted">Descargar</small></a>
+                  <h5 class="card-title">A Silent Voice</h5>
+                  <small class="text-muted">Doblado</small>
+                </div>
+              </a>
+            </div>
+          </div>
+        
+          <div class="col-md-3 col-12">
+            <div class="card-color card h-100">
+              <a href="series/HelloWorld/">
+                <img loading="lazy" src="{{ url_for('static', filename='img/Series-items/hello-world-anime-hd-banner.jpg') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a class="text-warning" href="https://mega.nz/folder/o8o3DAAI#CbmeMsnCVNiabMdmJwb0RA"><small class="text-muted">Descargar</small></a>
+                  <h5 class="card-title">Hello World</h5>
+                  <small class="text-muted">Subtitulado</small>
+                </div>
+              </a>
+            </div>
+          </div>  
+
+        </div>
+      </div>
+
+      <!-- Segunda fila -->
+      <div class="container">
+        <div class="hijo row row-cols-1 row-cols-md-3 g-4">
+
+          <div class="padre-c col-md-3 col-12">
+            <div class="card-color card h-100">
+              <a href="series/WeatheringWithYou/">
+                <img loading="lazy" src="{{ url_for('static', filename='img/seguir-viendo/Tenki_no_ko.jpg') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a class="text-warning" href="https://drive.google.com/drive/folders/1M3K4HphhXwckgq8Or8CDxoWGW8WKhc7G"><small class="text-muted">Descargar</small></a>
+                  <h5 class="card-title">Weathering With You</h5>
+                  <small class="text-muted">Doblado</small>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-md-3 col-12">
+            <div class="card-color card h-100">
+              <a href="series/Your_Name/">
+                <img loading="lazy" src="{{ url_for('static', filename='img/seguir-viendo/Your-Name-2016.webp') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a class="text-warning" href="https://www.mediafire.com/file/ze6yk3k230hc2o8/%5Bwww.mega1080.com%5DYOUNAMEHD1080P.zip"><small class="text-muted">Descargar</small></a>
+                  <h5 class="card-title">Your Name</h5>
+                  <small class="text-muted">Doblado</small>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-md-3 col-12">
+            <div class="card-color card h-100">
+              <a href="series/TheGardenOfWords/">
+                <img loading="lazy" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c11d5e79-1e51-4866-8bd5-c5a707569f7d/dfjjraj-937d32dc-7a0c-4f59-ba74-2c786476caf2.png/v1/fill/w_1280,h_720,q_80,strp/el_jardn_de_las_palabras_banner_by_aedla_dfjjraj-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvYzExZDVlNzktMWU1MS00ODY2LThiZDUtYzVhNzA3NTY5ZjdkXC9kZmpqcmFqLTkzN2QzMmRjLTdhMGMtNGY1OS1iYTc0LTJjNzg2NDc2Y2FmMi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hDVurhW-lX6N6VQnZZ1Fg9smkzzQ7jypkT6icuZVGVg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a class="text-warning" href="https://drive.google.com/drive/folders/1JX18JdUR-ykwwj8hOzVzkYOume69mN_4"><small class="text-muted">Descargar</small></a>
+                  <h5 class="card-title">The Garden Of Words</h5>
+                  <small class="text-muted">Doblado</small>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-md-3 col-12">
+            <div class="card-color card h-100">
+              <a href="series/5CentimetersPerSecond/">
+                <img loading="lazy" src="{{ url_for('static', filename='img/Series-items/5_centimetros_por_segundo_banner.webp') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a class="text-warning" href="https://drive.google.com/drive/folders/14CeksdepfCb9fAKbSumcmJ9MoiCkvWZd"><small class="text-muted">Descargar</small></a>
+                  <h5 class="card-title">5 Centimeters Per Second</h5>
+                  <small class="text-muted">Subtitulado</small>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Tercera fila -->
+      <div class="container">
+        <div class="hijo row row-cols-1 row-cols-md-3 g-4">
+
+          <div class="padre-c col-md-3 col-12">
+            <div class="card-color card h-100">
+              <a href="series/SaekanoTheMovie/">
+                <img loading="lazy" src="{{ url_for('static', filename='img/seguir-viendo/saekano-the-movie-finale.png') }}" class="card-img-top" alt="saekano-the-movie-finale">
+                <div class="card-body">
+                  <a class="text-warning" href="https://www.mediafire.com/file/4g4sbjmv1n9qjrs"><small class="text-muted">Descargar</small></a>
+                  <h5 class="card-title">Saekano The Movie Finale</h5>
+                  <small class="text-muted">Subtitulado</small>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-md-3 col-12">
+            <div class="card-color card h-100">
+              <a href="series/TheAnthemoftheHeart/">
+                <img loading="lazy" src="{{ url_for('static', filename='img/seguir-viendo/Himno del corazón.png') }}" class="card-img-top" alt="Himno del corazón">
+                <div class="card-body">
+                  <a class="text-warning" href="https://drive.google.com/drive/folders/1cQhKlmwDfZYBnia11ESg5eCmFjyO2gYG"><small class="text-muted">Descargar</small></a>
+                  <h5 class="card-title">The Anthem of the Heart</h5>
+                  <small class="text-muted">Subtitulado</small>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-md-3 col-12">
+            <div class="card-color card h-100">
+              <a href="series/Seishun_Buta_Yaro_wa_Yumemiru_Shoujo_no_Yume_wo_Minai/">
+                <img loading="lazy" src="{{ url_for('static', filename='img/seguir-viendo/seishun buta yarou wa bunny girl senpai no yume wo minai the movie.jpg') }}" class="card-img-top" alt="seishun buta yarou wa bunny girl senpai no yume wo minai the movie">
+                <div class="card-body">
+                  <a class="text-warning" href="https://mega.nz/folder/x0gG0QYQ#WaXr7Y6KCzjou7JGjyUMlQ/file/M1AFEKrL"><small class="text-muted">Descargar</small></a>
+                  <h5 class="card-title">Seishun Buta Yarō wa...</h5>
+                  <small class="text-muted">Subtitulado</small>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-md-3 col-12">
+            <div class="card-color card h-100">
+              <a href="series/K-On/">
+                <img loading="lazy" src="{{ url_for('static', filename='img/series-items/K-on-banner.jpg') }}" class="card-img-top" alt="K-On The Movie">
+                <div class="card-body">
+                  <a class="text-warning" href="https://drive.google.com/drive/folders/1mLJacCw1dvRFKheQt-kT0PqQVwshZTvG"><small class="text-muted">Descargar</small></a>
+                  <h5 class="card-title">K-On</h5>
+                  <small class="text-muted">Subtitulado</small>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Banner 1-->
+  <section class="baner mt-3 mb-5">
+    <div class="container-md container-fluid">
+      <figure class="banner-img p-0 p-md-3">
+        <a href="https://www.paypal.com/donate/?hosted_button_id=S2DESJHSA4EWU">
+          <img loading="lazy" src="{{ url_for('static', filename='img/banner/banner_donar.png') }}" alt="Spy x Family">
+        </a>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Siempre hay algo que ver -->
+  <section id="nuevo" class="my-5">
+
+    <!-- Primera carta -->
+    <div class="container">
+      <h2 class="popular text-center">SIEMPRE HAY <span class="active">ALGO QUE VER</span></h2>
+      <div class="card-container card mb-3 p-3"">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <a href="series/K-On/">
+              <img loading="lazy" src="{{ url_for('static', filename='img/Series-items/K-on-banner.jpg') }}" class="img-fluid rounded-start" alt="...">
+            </a>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <a class="card-titulo text-decoration-none" href="series/K-On/">
+                <h5 class="card-title fs-2">K-ON The MOVIE</h5>
+              </a>
+              <p class="card-text"><small class="serie">Película <span class="icono">Subtitulado</span></small></p>
+              <p class="card-text">K-On! La película es una película de animación japonesa del estudio de animación Kyōto Animation. Es el primer largometraje dirigido por Naoko Yamada y es parte de la franquicia animada K-On!, creada por Kakifly. La película se estrenó en los cines japoneses el 3 de diciembre de 2011.
+              </p>
+              <a class="text-decoration-none" href="series/K-On/">
+                <button class="button-final btn btn-warning" >Ver Ahora</button>
+              </a>
+              <a href="https://drive.google.com/drive/folders/1mLJacCw1dvRFKheQt-kT0PqQVwshZTvG">
+                <button class="button-color btn btn-outline-warning" >Descargar</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Segunda carta -->
+    <div class="container">
+      <div class="card-container card mb-3 p-3"">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <a href="series/Seishun_Buta_Yaro_wa_Yumemiru_Shoujo_no_Yume_wo_Minai/">
+              <img loading="lazy" src="{{ url_for('static', filename='img/Series-items/Seishun buta yarou wa yumeiru banner.jpg') }}" class="img-fluid rounded-start" alt="...">
+            </a>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <a class="card-titulo text-decoration-none" href="series/Seishun_Buta_Yaro_wa_Yumemiru_Shoujo_no_Yume_wo_Minai/">
+                <h5 class="card-title fs-2">Seishun Buta Yaro wa Yumemiru...</h5>
+              </a>
+              <p class="card-text"><small class="serie">Película <span class="icono">Subtitulado</span></small></p>
+              <p class="card-text">Los felices días de un estudiante de secundaria con su novia se interrumpen cuando su primer amor regresa en dos formas. Película secuela de la serie anime "Rascal Does Not Dream of Bunny Girl Senpai".
+              </p>
+              <a class="text-decoration-none" href="series/Seishun_Buta_Yaro_wa_Yumemiru_Shoujo_no_Yume_wo_Minai/">
+                <button class="button-final btn btn-warning" >Ver Ahora</button>
+              </a>
+              <a href="https://mega.nz/folder/2e53HYAS#-cJgvLqg8cW9tE4AcEqwIg">
+                <button class="button-color btn btn-outline-warning" >Descargar</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tercera carta -->
+    <div class="container">
+      <div class="card-container card mb-3 p-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <a href="series/HelloWorld/">
+              <img loading="lazy" src="{{ url_for('static', filename='img/Series-items/hello-world-anime-hd-banner.jpg') }}" class="img-fluid rounded-start" alt="...">
+            </a>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <a class="card-titulo text-decoration-none" href="series/HelloWorld">
+                <h5 class="card-title fs-2">Hello World</h5>
+              </a>
+              <p class="card-text"><small class="serie">Película <span class="icono">Subtitulado</span></small></p>
+              <p class="card-text">En el año 2027, Naomi Katagaki se encuentra con su yo de 10 años en el futuro. Ambos tendrán que salvar a la joven Ruri Ichigyō, con quien Naomi empezará a salir en los tres meses siguientes, y así cambiar su destino.
+              </p>
+              <a class="text-decoration-none" href="series/HelloWorld/">
+                <button class="button-final btn btn-warning" >Ver Ahora</button>
+              </a>
+              <a href="https://mega.nz/folder/o8o3DAAI#CbmeMsnCVNiabMdmJwb0RA">
+                <button class="button-color btn btn-outline-warning" >Descargar</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  
+  <!-- Banner 2 era de Kaguya Sama -->
+  <section class="baner mt-3 mb-5">
+      <div class="container">
+        <figure class="banner-img p-0 p-md-3">
+          <a href="https://www.youtube.com/@a.e.d.l.a/featured" target="_blank">
+            <img loading="lazy" src="{{ url_for('static', filename='img/banner/Aedla_banner.png') }}" alt="img kaguya sama">
+          </a>
+        </figure>
+      </div>
+  </section>
+
+  <!-- UNA Y OTRA VEZ -->
+  <section class="card-colors" id="otra">
+    <div class="container">
+      <h2 class="otra-vez text-center">UNA Y OTRA <span class="active">VEZ</span></h2>
+    </div>
+
+    <!-- Fondo 1 -->
+    <div class="fluid-color container-fluid d-flex justify-content-center my-3 py-3">
+      <div class="card-fondo" style="max-width: 1200px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <picture class="d-flex justify-content-center">
+              <img loading="lazy" src="{{ url_for('static', filename='img/renders/kuroneko__summer__render_by_azusacaky_d60qu9d-fullview.png') }}" alt="">
+            </picture>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body mt-4">
+              <a class="card-titulo text-decoration-none" href="series/Seishun_Buta_Yaro_wa_Yumemiru_Shoujo_no_Yume_wo_Minai/">
+                <h5 class="card-title fs-3">Seishun Buta Yarō wa Yumemiru Shōjo no Yume wo Minai</h5>
+              </a>
+              <p class="card-text"><small class="serie">Película <span class="icono">Subtitulado</span></small></p>
+              <p class="card-text">Un adolescente sinvergüenza no sueña con una chica soñadora?
+                En Fujisawa, Sakuta Azusagawa está en su segundo año de secundaria. Disfruta mucho sus días con Mai Sakurajima, quien durante los últimos 6 meses ha sido su novia. Sin embargo, sus apacibles vidas se ven interrumpidas por la aparición del primer amor de Sakuta, Shoko Makinohara.
+              </p>
+              <a class="text-decoration-none" href="series/Seishun_Buta_Yaro_wa_Yumemiru_Shoujo_no_Yume_wo_Minai/">
+                <button class="button-final btn btn-warning m-0" >Ver Ahora</button>
+              </a>
+              <a href="https://mega.nz/folder/2e53HYAS#-cJgvLqg8cW9tE4AcEqwIg">
+                <button class="button-color btn btn-outline-warning" >Descargar</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- fondo 2 -->
+    <div class="fluid-color-2 container-fluid d-flex justify-content-center my-3 py-3">
+      <div class="card-fondo" style="max-width: 1200px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <picture class="d-flex justify-content-center">
+              <img loading="lazy" src="{{ url_for('static', filename='img/renders/azusa__render__2__by_iemelien_d9i8fqu.png') }}" class="img-fluid rounded-start" width="60%" alt="...">
+            </picture>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body mt-4">
+              <a class="card-titulo text-decoration-none" href="#">
+                <h5 class="card-title fs-3">Go-Tōbun no Hanayome: La película</h5>
+              </a>
+              <p class="card-text"><small class="serie">Película <span class="icono">Subtitulado</span></small></p>
+              <p class="card-text">El tutor adolescente Fuutaro Uesugi tiene que elegir finalmente entre las 5 hermanas Nakano, que sienten algo por él, en el próximo festival cultural de la escuela; el evento que conducirá a su Boda a uno de ellos en un Flash-Forward.
+              </p>
+              <a class="text-decoration-none" href="#">
+                <button class="button-final btn btn-warning m-0" >Ver Ahora</button>
+              </a>
+              <a href="#">
+                <button class="button-color btn btn-outline-warning" >Descargar</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- fondo 3 -->
+    <div class="fluid-color-3 container-fluid d-flex justify-content-center my-3 py-3">
+      <div class="card-fondo" style="max-width: 1200px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <picture class="d-flex justify-content-center">
+              <img loading="lazy" src="{{ url_for('static', filename='img/renders/pngwing212221.com.png') }}" class="img-fluid rounded-start" width="35%" alt="...">
+            </picture>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body mt-4">
+              <a class="card-titulo text-decoration-none" href="series/SaekanoTheMovie/">
+                <h5 class="card-title fs-3">Saekano the Movie: Finale</h5>
+              </a>
+              <p class="card-text"><small class="serie">Película <span class="icono">Subtitulado</span></small></p>
+              <p class="card-text">Con el segundo Winter Comiket a la vuelta de la esquina, Blessing Software ha estado produciendo vigorosamente su nuevo juego, "Cómo criar a una novia aburrida". A pesar de que Utaha Kasumigaoka y Eriri Spencer Sawamura abandonaron el círculo, Megumi Katou y Tomoya Aki tienen la esperanza de que, al apegarse a la visión original del juego de Tomoya, su próxima creación superará la entrega anterior de Blessing Software.
+              </p>
+              <a class="text-decoration-none" href="series/SaekanoTheMovie/">
+                <button class="button-final btn btn-warning m-0" >Ver Ahora</button>
+              </a>
+              <a href="https://www.mediafire.com/file/4g4sbjmv1n9qjrs">
+                <button class="button-color btn btn-outline-warning" >Descargar</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Footer-->
+  <footer>
+    <div class="container">
+      <div class="text-img">
+        <img loading="lazy" src="{{ url_for('static', filename='img/items-hime/NekoDePng.png') }}" alt="">
+        <p class="m-0" >¿Sigues buscando algo que ver?</p>
+        <p>Revisa todo nuestro catálogo</p>
+        <a href="#">
+          <button class="button-color btn btn-outline-warning" >VER TODO</button>
+        </a>
+      </div>
+
+      <div class="social-media">
+        
+        <!-- Navegación -->
+        <div class="navegacion">
+          <h5>Navegación</h5>
+          <div class="kya">
+            <a href="#popular">Explorar lo más popular</a>
+            <a href="#explorar">Explorar lo inexplorado</a>
+            <a href="#nuevo">Siempre hay algo  nuevo que ver</a>
+            <a href="#otra">Una y otra vez</a>
+          </div>
+        </div>
+
+        <!-- Conecta Con Nosotros -->
+        <div class="icons">
+          <h5>Conecta <span>con nosotros</span></h5>
+          <div class="kya">
+
+            <a href="https://www.youtube.com/@a.e.d.l.a/featured" target="_blank">
+              <i class="bi bi-youtube"></i>
+              <span>YouTube</span>
+            </a>
+            
+            <a href="https://www.facebook.com/" target="_blank">
+              <i class="bi bi-facebook"></i>
+              <span>Facebook</span>
+            </a>
+            
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="bi bi-instagram"></i>
+              <span>Instagram</span>
+            </a>
+            
+            <a href="https://twitter.com/" target="_blank">
+              <i class="bi bi-twitter"></i>
+              <span>Twitter</span>
+            </a>
+          </div>
+          
+        </div>
+
+        <!-- Aedla -->
+        <div class="andruedla">
+          <h5>Aedla</h5>
+          <div class="kya">
+            <a href="https://www.paypal.com/donate/?hosted_button_id=S2DESJHSA4EWU">Donar</a>
+            <a href="#">Hazte Premium</a>
+            <a href="#">Acerca</a>
+            <a href="#">Ayuda/FAQ</a>
+            <a href="#">Política de Privacidad</a>
+          </div>
+        </div>
+
+        <!-- Cuenta -->
+        <div class="cuenta">
+          <h5>Cuenta</h5>
+          <div class="kya">
+            <a href="#">Mi Lista</a>
+            <a href="#">Historial</a>
+            <a href="#">Mi Cuenta</a>
+            <a href="index.html">Iniciar Sesión</a>
+            <a href="account.html">Crear cuenta</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <span class="linea-f" ></span>
+    </div>
+
+    <div class="powered">
+      <h5>© Powered by Dru, AA.RR</h5>
+      <h5>Aedla ツ</h5>
+    </div>
+  </footer>
+
+  <!--Boostrap Js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="./assets/js/contador.js"></script>
+</body>
+</html>

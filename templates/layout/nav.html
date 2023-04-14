@@ -1,0 +1,30 @@
+  <!--Barra de navegacion responsive-->
+  <header>
+    <nav class="navega navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="{{ url_for('static', filename='img/aedla.items/nav_logo.png') }}" height="30rem" alt="logo de pagina web">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <ul class="navbar-nav me-auto">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/"><span class="aedla"><i class="bi bi-box-arrow-left"></i> AEDLA ツ</span></a>
+            </li>
+
+          </ul>
+          <form class="d-flex" role="search">
+            <a href="#">
+              <button type="button" class="button-color btn btn-outline-warning">Reportar un problema</button>
+            </a>
+            <a href="#">
+              <button type="button" class="button-final btn btn-warning">Donar</button>
+            </a>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>

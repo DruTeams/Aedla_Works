@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Rubik:wght@700&display=swap');
+
+::selection {
+    background-color: #23252b;
+    color: #F47521;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Boton arriba*/
+.ir-arriba {
+    display: none;
+    font-size: 35px;
+    color: whitesmoke;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9;
+}
+
+/* Estilos Generales */
+body {
+    background-color: black;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+h2 {
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+/* header */
+
+.navega {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+/* Barra de navegaciom */
+nav .container-fluid {
+    /* max-width: 1440px; */
+    max-width: 1540px;
+}
+
+.navbar-collapse {
+    justify-content: center;
+}
+
+.d-flex .btn-warning {
+    margin-left: .5rem;
+}
+
+
+/* Barra de navegaciom componentes */
+
+li .aedla {
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+
+li .aedla:hover {
+    color: #F47521;
+    transition: all .5s;
+}
+
+.button-color {
+    color: #F47521;
+    border: solid #F47521 2px;
+}
+
+.button-color:hover {
+    color: #141519;
+    background-color: #F47521;
+    border: solid #F47521 2px;
+}
+
+.button-final {
+    color: black;
+    background-color: #F47521;
+    border: solid #F47521 2px;
+}
+
+
+
+/* Carrusel */
+.bg-hime {
+    background-image: url(/static/img/items-hime/wallpaper\ hime\ 1.png);
+    background-size: cover;
+    /* background-position: center center; */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.margen-top {
+    margin-top: 3.5rem;
+}
+
+.card-color {
+    background-color: black;
+    color: white;
+}
+
+/* Carrusel control */
+.carousel-control-prev-icon {
+    margin-left: -10rem;
+}
+
+.carousel-control-next-icon {
+    margin-right: -10rem;
+}
+
+.carousel-item img {
+    width: 70%;
+}
+
+
+/*Tamaño del carrusel*/
+.Movil {
+    display: none;
+}
+
+@media screen and (max-width: 1450px){
+    .carousel-item img {
+        width: 56%;
+    }
+}
+
+/*Lo mas visto - popular*/
+
+.columna a img {
+    width: 95%;
+}
+
+@media screen and (max-width: 1450px){
+    .columna a img {
+        width: 85%;
+    }
+}
+
+.popular {
+    color: #F47521;
+}
+
+.popular:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient(135deg, #c8823e 0, #cc783d 8.33%, #cf6d3e 16.67%, #d0603f 25%, #d05041 33.33%, #ce3e44 41.67%, #ca2748 50%, #c5004d 58.33%, #be0054 66.67%, #b6005d 75%, #ac0068 83.33%, #a00073 91.67%, #92007f 100%);
+    background-position: center center;
+    margin: .5px auto;
+}
+
+.visto .columna {
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+
+.visto .columna:hover {
+    color: #F47521;
+    background-color: #0a0a23;
+    transition: all .5s;
+}
+
+
+.active {
+    color: white;
+}
+
+.seccion-oscura {
+    color: white;
+    background-color: #1b1b32;
+}
+
+.visto {
+    padding: 40px 40px 60px 40px;
+}
+
+.visto-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.visto i {
+    font-size: 1.3rem;
+    color: #F47521;
+    background-color: #0a0a23;
+    padding: 8px 12px;
+    border-radius: 12%;
+}
+
+
+.badges-contenedor {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.badge {
+    margin: 2.5px;
+}
+
+
+/* Explorar */
+
+.explore:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: rgb(250,184,24);
+    background: radial-gradient(circle, rgba(250,184,24,1) 0%, rgba(239,67,35,1) 100%, rgba(239,67,35,1) 100%);
+    margin: .5px auto;
+}
+
+.container .explore {
+    color: #F47521;
+    margin-top: 2rem;
+    font-weight: 700;
+}
+
+.card-color {
+    padding: 1rem;
+}
+
+.card-color:hover {
+    /* background-color: #213944; */
+    background-color: #23252b;
+    transition: all .5s;
+}
+
+.text-muted {
+    --bs-text-opacity: 1;
+    color: #6c757d!important;
+}
+
+
+/*Banner*/
+
+.banner-img img {
+    text-align: center;
+    width: 100%;
+}
+
+
+/*Siempre hay algo que ver*/
+
+.card-container {
+    background-color: black;
+    color: white;
+}
+
+.serie {
+    color: #2abdbb;
+}
+
+.icono {
+    color: white;
+}
+
+.card-titulo {
+    color: white;
+}
+
+.card-titulo:hover {
+    color: white;
+    
+}
+
+/* Carta de colores */
+
+.otra-vez {
+    color: #F47521;
+}
+
+.otra-vez:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient(135deg, #d94cbe 0, #c742c2 12.5%, #b138c5 25%, #9730c8 37.5%, #762aca 50%, #4828cc 62.5%, #0029cf 75%, #002cd1 87.5%, #002fd2 100%);
+    background-position: center center;
+    margin: .5px auto;
+}
+
+
+.fluid-color-2 {
+    background-image: linear-gradient(180deg,#2abdbb 22%,#2d9594);
+}
+
+.fluid-color {
+    background: rgb(250,184,24);
+    background: linear-gradient(180deg, rgba(250,184,24,1) 0%, rgba(239,67,35,1) 100%, rgba(239,67,35,1) 100%);
+}
+
+.fluid-color-3 {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.card-fondo {
+    background-color: black;
+
+}
+
+.container-fluid h5 {
+    color: white;
+}
+
+.container-fluid p {
+    color: white;
+}
+
+picture img {
+    width: 40%;
+}
+
+
+
+/*Footer*/
+footer {
+    background: #000 linear-gradient(180deg,#0000,#213944);
+}
+
+.text-img {
+    margin: 60px 0;
+    text-align: center;
+    color: white;
+}
+
+.text-img img {
+    width: 200px;
+    height: 200px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 80px 0;
+}
+
+.social-media h5 {
+    color: white;
+    font-weight: bold;
+}
+
+.social-media a {
+    color: #a0a0a0;
+    text-decoration: none;
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+}
+
+.kya {
+    display: flex;
+    flex-direction: column;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+}
+
+.andruedla {
+    display: flex;
+    flex-direction: column;
+}
+
+.cuenta {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .linea-f {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background-color: #4a4e58;
+    margin: .5px auto;
+}
+
+.powered {
+    display: flex;
+    justify-content: space-around;
+    color: #a0a0a0;
+}
+
+.powered h5 {
+    font-size: .9rem;
+    margin: 25px 0;
+}
+
+
+
+
+
+@media screen and (max-width: 600px){
+
+    .ir-arriba {
+        z-index: -99;
+        opacity: 0;
+    }
+
+    .login-1 {
+        padding: 8px 0;
+    }
+
+    /* Carrusel */
+    .bg-hime {
+        background: rgb(131,58,180);
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    }
+
+    /*Imagen del carrusel*/
+
+    .Movil {
+        display: inline;
+    }
+
+    .Destok {
+        display: none;
+    }
+
+    .card-color {
+        padding: 1rem;
+    }
+
+    .container h2 {
+        margin-top: 2rem;
+    }
+
+
+    .card-fondo {
+        padding: .9rem .9rem;
+    }
+
+    picture img {
+        width: 60%;
+        margin-top: -45px;
+    }
+
+    /*Footer*/
+
+    .text-img {
+        margin: 50px 0;
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navegacion, .icons, .andruedla, .cuenta {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 321px){
+    .carousel-item a img {
+        width: 750px;
+    }
+
+    .visto {
+        padding: 10px 20px 30px 20px;
+    }
+
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!--Metadatos = codificacion-->
+  {% include 'layout/head.html'%}
+  <!--Metadatos SEO-->
+  <meta name="keywords" content="anime, anime world, top anime 2022">
+  <!--Style css-->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style_series/Kimi_No_Na_Wa.css') }}">
+  <title>Your Name</title>
+</head>
+<body>
+  <!-- Nav ressponsive -->  
+  {% include 'layout/nav.html'%}
+  
+  <!-- banner -->
+  <div class="banner container-fluid p-0">
+    <div class="fondo-b">
+      <div class="container text-center">
+        <iframe src="https://mega.nz/embed/Jx0GgKzQ#YazuFChtBFseU5OTEMy8VL-lNruVwjvWXdIvBR0RzG8" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+        <img class="portada-movil" src="{{ url_for('static', filename='img/Series-items/your_name-web.webp') }}" alt="your_name_portada">
+      </div>
+    </div>
+  </div>
+
+  <!--Card content-->
+  <section class="series">
+    <div class="container">
+      <div class="card">
+        <div class="row g-0">
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Your Name</h5>
+              <p class="card-text"><small class="text-mute">Audio | Japonés</small></p>
+
+              <div class="ratings">
+
+                <div class="estrellas">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <span class="palito">|</span>
+                <p id="puntuacion" >Puntuación media 4.9</p>
+                <span class="palito">|</span>
+                <p>10M de Reseñas</p>
+
+              </div>
+
+              <button class="button-final btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"></i> Información de la serie <i class="bi bi-info-circle-fill"></i></button>
+              <div class="offcanvas offcanvas-start bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                <div class="offcanvas-header">
+                  <h5 class="fs-2 fw-bold offcanvas-title" id="offcanvasScrollingLabel">Información</h5>
+                  <button type="button" class="bg-white btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                
+                <div class="offcanvas-body">
+                  <p><span class="fw-bolder">Nombre:</span> Kimi no Na wa., Your Name, Tu Nombre</p>
+                  <p><span class="fw-bolder" >Tipo:</span> Película</p>
+                  <p><span class="fw-bolder" >Estudio:</span> CoMix Wave Films</p>
+                  <p><span class="fw-bolder" >Año:</span> 2016</p>
+                  <p><span class="fw-bolder" >Género:</span> Drama, Romance, Sobrenatural</p>
+                  <p><span class="fw-bolder" >Resolución:</span> 1920x1080 | 3840x2160</p>
+                  <p><span class="fw-bolder" >Calidad:</span> BD Excelente</p>
+                  <p><span class="fw-bolder" >Duración:</span> 106 minutos</p>
+                  <p><span class="fw-bolder" >Audio:</span> Español Latino, Castellano y Japonés</p>
+                  <p><span class="fw-bolder" >Subtitulos:</span> Español, Castellano</p>
+                  <p><span class="fw-bolder" >Formato:</span> MKV</p>
+                  <p><span class="fw-bolder" >Peso:</span> 3.22GB | 3.91GB | 9.23GB | 17GB</p>
+                  <p><span class="fw-bolder" >Servidor:</span> Mega y Google Drive</p>
+                  <p><span class="fw-bolder" >Contraseña:</span> sphinxanimehd</p>
+                </div>
+
+              </div>
+              <!-- LIKE AND DISLIKE agregar -->
+              <!-- <button class="b-series button-final btn btn-warning" >Ver Ahora</button> -->
+              <a href="https://www.mediafire.com/file/ze6yk3k230hc2o8/%5Bwww.mega1080.com%5DYOUNAMEHD1080P.zip">
+                <button id="b-descargar" class="b-series button-color btn btn-outline-warning" >Descargar <i class="bi bi-arrow-down-circle"></i></button>
+              </a>
+              
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img class="portada" src="{{ url_for('static', filename='img/Series-items/your_name-web.webp') }}" alt="Your_Name">
+            <iframe class="movil" src="https://mega.nz/embed/Jx0GgKzQ#YazuFChtBFseU5OTEMy8VL-lNruVwjvWXdIvBR0RzG8" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Boostrap Js CDN-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

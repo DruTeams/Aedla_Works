@@ -1,5 +1,5 @@
 ---
-title: Flask
+title: Flask - APP WEB - Aedla_Works
 description: A popular minimal server framework for Python
 tags:
   - python
@@ -21,3 +21,4 @@ This is a [Flask](https://flask.palletsprojects.com/en/1.1.x/) app that serves a
 
 - Install Python requirements `pip install -r requirements.txt`
 - Start the server for development `python3 main.py`
+- Powered for DruChill and AA.RR Corporation

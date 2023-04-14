@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Rubik:wght@700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos Generales */
+body {
+    background-color: black;
+    box-sizing: border-box;
+
+}
+
+h2 {
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+/* header */
+
+/* Barra de navegaciom */
+nav .container-fluid {
+    /* max-width: 1440px; */
+    max-width: 1840px;
+}
+
+.navbar-collapse {
+    justify-content: center;
+}
+
+.d-flex .btn-warning {
+    margin-left: .5rem;
+}
+
+
+/* Barra de navegaciom componentes */
+
+.navbar-brand {
+    display: none;
+}
+
+li .aedla {
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+
+li .aedla:hover {
+    color: #F47521;
+    transition: all .5s;
+}
+
+.button-color {
+    color: #F47521;
+    border: solid #F47521 2px;
+}
+
+.button-color:hover {
+    color: #141519;
+    background-color: #F47521;
+    border: solid #F47521 2px;
+}
+
+.button-final {
+    color: black;
+    background-color: #F47521;
+    border: solid #F47521 2px;
+}
+
+
+.palito {
+    margin-left: .5rem;
+}
+
+
+/*Banner*/
+.banner {
+    background-color: #1b1b32;
+}
+
+.fondo-b {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../../assets/img/seguir-viendo/Fireworks.jpeg");
+    background-size: cover;
+    background-position: center center;
+}
+
+iframe {
+    /* width: 950px;
+    height: 450px; */
+    width: 1000px;
+    height: 500px;
+    margin-bottom: -.4rem;
+}
+
+
+#Phone {
+    display: none;
+}
+
+
+/*Card container*/
+.card {
+    color: white;
+    background-color: #0000;
+    margin-top: 2rem;
+}
+
+
+.ratings {
+    display: flex;
+}
+
+.ratings p {
+    margin-left: .6rem;
+}
+
+.b-series {
+    margin-left: .5rem;
+}
+
+.estrellas i {
+    color: #F47521;
+}
+
+.portada {
+    width: 45%;
+}
+
+.movil {
+    display: none;
+}
+
+.portada-movil {
+    display: none;
+}
+
+
+
+
+/*Destok Design*/
+
+@media screen and (max-width: 1450px){
+
+    .portada {
+        width: 42%;
+    
+    }
+
+    iframe {
+        width: 700px;
+        height: 400px;
+    }
+
+}
+
+
+
+
+/*Design iPhone 12*/
+
+@media screen and (max-width: 884px){
+
+    /*Header*/
+
+    .navbar-brand {
+        display: inline;
+    }
+
+    .aedla {
+        display: none;
+    }
+
+    /*Card container*/
+    .card {
+        margin-top: 0;
+    }
+
+    #puntuacion {
+        margin-bottom: 0;
+    }
+
+    .ratings p {
+        margin-left: 0;
+    }
+
+    /* Se quito poruqe se quito el boton de (ver ahora)
+    #b-descargar {
+        margin-top: .5rem;
+    } */
+
+    /*FONDO DE FONDOS XD*/
+    .fondo-b {
+        background-position: center center;
+    }
+
+    #Phone {
+        display: inline-block;
+    }
+
+    .b-series {
+        margin-left: 0;
+    }
+
+    .container .banner {
+        height: 80%;
+        width: 80%;
+    }
+
+    .ratings {
+        flex-direction: column;
+    }
+
+    .palito {
+        display: none;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        display: none;
+        margin-bottom: 5rem
+    }
+
+    .portada {
+        width: 50%;
+        padding-left: 1rem;
+        display: none;
+    }
+
+    .movil {
+        display: flex;
+    }
+    
+    .portada-movil {
+        display:inline;
+        justify-content: center;
+        height: 50%;
+        width: 50%;
+    }
+
+}
+
+
+
+/*Design iPhone SE*/
+@media screen and (max-width: 390px){
+
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .portada {
+        width: 73%;
+    }
+
+    #b-descargar {
+        margin-top: .3rem;
+    }
+
+
+}
