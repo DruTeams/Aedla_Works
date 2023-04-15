@@ -2,23 +2,32 @@
 <html lang="es">
 <head>
   <!--Metadatos = codificacion-->
-  <?php include ("../../layout/head.php"); ?>
+  {% include 'layout/head.html'%}
   <!--Metadatos SEO-->
-  <meta name="keywords" content="saekano the movie finale ver online, Saenai Heroine no Sodate-kata fine, anime">
-  <!--Style css-->
-  <link rel="stylesheet" href="../../series/SaekanoTheMovie/saekano.css">
+  <meta name="keywords" content="anime, anime world, top anime 2023, Saekano The Movie: Finale">
   <title>Saekano The Movie: Finale</title>
+  <style>
+    .fondo-b {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/static/img/series-items/saekano-banner.jpg");
+    background-size: cover;
+  }
+  </style>
 </head>
 <body>
-  <!-- Nav ressponsive -->
-  <?php include ("../../layout/nav.php"); ?>
-
+  <!-- Nav ressponsive -->  
+  {% include 'layout/nav.html'%}
+  
   <!-- banner -->
   <div class="banner container-fluid p-0">
     <div class="fondo-b">
-      <div class="container text-center d-flex justify-content-center">
-        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fweb.facebook.com%2F100018046540052%2Fvideos%2F1315346742561178%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-        <img class="portada-movil" src="../../assets/img/popular/Saekano-popular.png" alt="Saekano The Movie: Finale">
+      <div class="container text-center">
+        <iframe src="https://mega.nz/embed/Jx0GgKzQ#YazuFChtBFseU5OTEMy8VL-lNruVwjvWXdIvBR0RzG8" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+        <img class="portada-movil" src="{{ url_for('static', filename='img/popular/Saekano-popular.png') }}" alt="your_name_portada">
       </div>
     </div>
   </div>
@@ -30,7 +39,7 @@
         <div class="row g-0">
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">Seishun Buta Yarō wa Yumemiru Shōjo no Yume wo Minai</h5>
+              <h5 class="card-title">Saekano The Movie: Finale</h5>
               <p class="card-text"><small class="text-muted">Audio | Japonés</small></p>
 
               <div class="ratings">
@@ -49,7 +58,7 @@
 
               </div>
 
-              <button class="button-final btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Información de la serie <i class="bi bi-info-circle-fill"></i></button>
+              <button class="button-final btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"></i> Información de la serie <i class="bi bi-info-circle-fill"></i></button>
               <div class="offcanvas offcanvas-start bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
                 <div class="offcanvas-header">
                   <h5 class="fs-2 fw-bold offcanvas-title" id="offcanvasScrollingLabel">Información</h5>
@@ -76,14 +85,15 @@
               </div>
               <!-- LIKE AND DISLIKE agregar -->
               <!-- <button class="b-series button-final btn btn-warning" >Ver Ahora</button> -->
-              <a href="https://www.mediafire.com/file/4g4sbjmv1n9qjrs">
+              <a href="https://www.mediafire.com/file/ze6yk3k230hc2o8/%5Bwww.mega1080.com%5DYOUNAMEHD1080P.zip">
                 <button id="b-descargar" class="b-series button-color btn btn-outline-warning" >Descargar <i class="bi bi-arrow-down-circle"></i></button>
               </a>
+              
             </div>
           </div>
           <div class="col-md-4">
-            <img  class="portada" src="../../assets/img/popular/Saekano-popular.png" alt="Saekano The Movie: Finale">
-            <iframe id="Phone" class="mb-4" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fweb.facebook.com%2F100018046540052%2Fvideos%2F1315346742561178%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            <img class="portada" src="{{ url_for('static', filename='img/popular/Saekano-popular.png') }}" alt="Your_Name">
+            <iframe class="movil" src="https://mega.nz/embed/Jx0GgKzQ#YazuFChtBFseU5OTEMy8VL-lNruVwjvWXdIvBR0RzG8" width="640" height="360" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -91,6 +101,6 @@
   </section>
 
   <!--Boostrap Js CDN-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -74,6 +74,11 @@ li .aedla:hover {
     margin-left: .5rem;
 }
 
+.text-muted {
+    --bs-text-opacity: 1;
+    color: #6c757d!important;
+}
+
 
 /*Banner*/
 .banner {
@@ -86,9 +91,8 @@ li .aedla:hover {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("../../assets/img/seguir-viendo/Fireworks.jpeg");
+    ,url("/static/img/series-items/your_name-web.webp");
     background-size: cover;
-    background-position: center center;
 }
 
 iframe {
@@ -99,10 +103,6 @@ iframe {
     margin-bottom: -.4rem;
 }
 
-
-#Phone {
-    display: none;
-}
 
 
 /*Card container*/
@@ -198,10 +198,6 @@ iframe {
     /*FONDO DE FONDOS XD*/
     .fondo-b {
         background-position: center center;
-    }
-
-    #Phone {
-        display: inline-block;
     }
 
     .b-series {

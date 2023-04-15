@@ -2,23 +2,28 @@
 <html lang="es">
 <head>
   <!--Metadatos = codificacion-->
-  <?php include ("../../layout/head.php"); ?>
+  {% include 'layout/head.html'%}
   <!--Metadatos SEO-->
   <meta name="keywords" content="anime, anime world, top anime 2022">
-  <!--Style css-->
-  <link rel="stylesheet" href="../../series/Seishun_Buta_Yaro_wa_Yumemiru_Shoujo_no_Yume_wo_Minai/Rascal_Does_Not_Dream_of_Dreaming_Girl_the_Movie.css">
   <title>Seishun Buta Yarō wa Yumemiru Shōjo no Yume wo Minai</title>
+  <style>
+    .fondo-b {
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ) ,url("/static/img/Series-items/Seishun\ buta\ yarou\ wa\ yumeiru\ banner-1.jpg");
+    background-size: cover;
+    background-position: center center;
+    }
+  </style>
 </head>
 <body>
   <!-- Nav ressponsive -->
-  <?php include ("../../layout/nav.php"); ?>
+  {% include 'layout/nav.html'%}
 
   <!-- banner -->
   <div class="banner container-fluid p-0">
     <div class="fondo-b">
       <div class="container text-center">
         <iframe src="https://www.yourupload.com/embed/I7MQf764wVyI" allowfullscreen="true" style="border: 0" /></iframe>
-        <img class="portada-movil" src="../../assets/img/popular/Seishun Buta Yarou wa....webp" alt="">
+        <img class="portada-movil" src="{{ url_for('static', filename='img/popular/Seishun Buta Yarou wa....webp') }}" alt="">
       </div>
     </div>
   </div>
@@ -82,7 +87,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <img class="portada" src="../../assets/img/popular/Seishun Buta Yarou wa....webp" alt="">
+            <img class="portada" src="{{ url_for('static', filename='img/popular/Seishun Buta Yarou wa....webp') }}" alt="">
             <iframe class="movil" src="https://www.yourupload.com/embed/I7MQf764wVyI" allowfullscreen="true" style="border: 0" /></iframe>
           </div>
         </div>

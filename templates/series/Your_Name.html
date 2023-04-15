@@ -5,9 +5,18 @@
   {% include 'layout/head.html'%}
   <!--Metadatos SEO-->
   <meta name="keywords" content="anime, anime world, top anime 2022">
-  <!--Style css-->
-  <link rel="stylesheet" href="{{ url_for('static', filename='style_series/Kimi_No_Na_Wa.css') }}">
   <title>Your Name</title>
+  <style>
+    .fondo-b {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/static/img/series-items/your_name-web.webp");
+    background-size: cover;
+  }
+  </style>
 </head>
 <body>
   <!-- Nav ressponsive -->  
@@ -31,7 +40,7 @@
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title">Your Name</h5>
-              <p class="card-text"><small class="text-mute">Audio | Japonés</small></p>
+              <p class="card-text"><small class="text-muted">Audio | Japonés</small></p>
 
               <div class="ratings">
 
