@@ -47,7 +47,30 @@ def saekano_the_movie():
 
 
 
+@app.route('/Fire-Works', methods=['GET','POST'])
+def Fire_Works():
+    if request.method == 'POST':
+        return ""
+    else:
+        return render_template ('series/Fire_Works.html')
 
+
+
+@app.route('/K-On', methods=['GET','POST'])
+def K_On():
+    if request.method == 'POST':
+        return ""
+    else:
+        return render_template ('series/K-On_The_Movie.html')
+
+
+
+@app.route('/Hello-World', methods=['GET','POST'])
+def Hello_World():
+    if request.method == 'POST':
+        return ""
+    else:
+        return render_template ('series/Hello_World.html')
 
 
 
