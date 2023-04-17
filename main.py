@@ -74,5 +74,57 @@ def Hello_World():
 
 
 
+@app.route('/Kimi_no_Suizou_wo_Tabetai', methods=['GET','POST'])
+def Kimi_no_Suizou_wo_Tabetai():
+    if request.method == 'POST':
+        return ""
+    else:
+        return render_template ('series/Kimi_no_Suizou_wo_Tabetai.html')
+
+
+
+@app.route('/A_Silent_Voice', methods=['GET','POST'])
+def A_Silent_Voice():
+    if request.method == 'POST':
+        return ""
+    else:
+        return render_template ('series/A_Silent_Voice.html')
+
+
+
+@app.route('/Weathering_With_You', methods=['GET','POST'])
+def Weathering_With_You():
+    if request.method == 'POST':
+        return ""
+    else:
+        return render_template ('series/Weathering_With_You.html')
+
+
+
+@app.route('/The_Garden_Of_Words', methods=['GET','POST'])
+def The_Garden_Of_Words():
+    if request.method == 'POST':
+        return ""
+    else:
+        return render_template ('series/The_Garden_Of_Words.html')
+
+
+
+@app.route('/Five_Centimeters_Per_Second', methods=['GET','POST'])
+def Five_Centimeters_Per_Second():
+    if request.method == 'POST':
+        return ""
+    else:
+        return render_template ('series/Five_Centimeters_Per_Second.html')
+    
+    The_Anthemofthe_Heart.html
+
+@app.route('/The_Anthemofthe_Heart', methods=['GET','POST'])
+def The_Anthemofthe_Heart():
+    if request.method == 'POST':
+        return ""
+    else:
+        return render_template ('series/The_Anthemofthe_Heart.html')
+
 if __name__ == '__main__':
     app.run(debug=True, port=os.getenv("PORT", default=5000))
