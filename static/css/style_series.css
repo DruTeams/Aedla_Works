@@ -141,7 +141,13 @@ iframe {
     display: none;
 }
 
+.offcanvas-header {
+    color: #fff;
+}
 
+.offcanvas-body p {
+    color: #fff;
+}
 
 
 /*Destok Design*/

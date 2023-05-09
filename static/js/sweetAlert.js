@@ -1,4 +1,3 @@
-
 const shareBtn = document.getElementById("share-btn");
 shareBtn.addEventListener("click", () => {
 // Obtenemos la URL actual de la página
@@ -24,12 +23,18 @@ document.body.removeChild(inputElement);
 // Creamos y mostramos la alerta personalizada
 const alertElement = document.createElement("div");
 Swal.fire({
-    position: 'center',
-    icon: 'success',
-    title: '¡Enlace copiado!',
-    showConfirmButton: false,
-    timer: 2000
-});
+    title: '¡Vínculo copiado!',
+    width: 350,
+    padding: '1.5em',
+    color: '#716add',
+    background: '#fff url(/images/trees.png)',
+    backdrop: `
+      rgba(0,0,123,0.4)
+      url("/static/loli-dance.gif")
+      left top
+      no-repeat
+    `
+  });
 document.body.appendChild(alertElement);
 setTimeout(() => document.body.removeChild(alertElement), 2000);
 });
