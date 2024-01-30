@@ -17,6 +17,12 @@ def contact():
         return render_template('Contact.html')
     
 
+@app.route('/search', methods=['GET','POST'])
+def search():
+    if request.method == 'POST':
+        return ""
+    else:
+        return render_template('search.html')
 
 #Series Aedla-World
 
