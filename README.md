@@ -22,3 +22,13 @@ This is a [Flask](https://flask.palletsprojects.com/en/1.1.x/) app that serves a
 - Install Python requirements `pip install -r requirements.txt`
 - Start the server for development `python3 main.py`
 - Powered for DruChill and AA.RR Corporation
+
+## Crear Entorno Virtual y tener PIP actualizado
+
+- Navegar al Directorio del Proyecto `cd /ruta/a/tu/proyecto`
+- Crear un entorno virtual `python3 -m venv nombre_del_entorno`
+- Activar el entorno virtual `source nombre_del_entorno/bin/activate`
+- Y si usaste venv como nombre del entorno, el comando sería `source venv/bin/activate`
+
+
+- Powered for DruChill and AA.RR Corporation
